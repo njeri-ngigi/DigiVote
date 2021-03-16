@@ -1,0 +1,349 @@
+{
+  "contractName": "Votes",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "voteForCandidates",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"voteForCandidates\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/njeringigi/CMU/sem-2/bitcoin_and_cryptocurrencies/project/DigiVote/node-backend-2/contracts/Votes.sol\":\"Votes\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/njeringigi/CMU/sem-2/bitcoin_and_cryptocurrencies/project/DigiVote/node-backend-2/contracts/Votes.sol\":{\"keccak256\":\"0xcf39610d93c0e059e9065353c41ae455437ecd10a827ff2e3cc62d70efc34346\",\"urls\":[\"bzz-raw://77abf5e038a2a15371fe42f8c9595b72f2654a041353b15ba746471281f7a639\",\"dweb:/ipfs/Qmddv3VyMUEt6CBn2TriwMBooRDgojUHLQxmv7yErus4Bt\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b50606c8060216000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b671be2b14602d575b600080fd5b60336035565b005b56fea265627a7a723158207e731f9efa6a85c75aff3832053b16a94e8f410c01bee5435be6d6be32dd86fb64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b671be2b14602d575b600080fd5b60336035565b005b56fea265627a7a723158207e731f9efa6a85c75aff3832053b16a94e8f410c01bee5435be6d6be32dd86fb64736f6c63430005100032",
+  "sourceMap": "25:168:1:-;;;62:1;44:19;;25:168;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:168:1;;;;;;;",
+  "deployedSourceMap": "25:168:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:168:1;;;;;;;;;;;;;;;;;;;149:42;;;:::i;:::-;;;:::o",
+  "source": "pragma solidity >0.5.0;\n\ncontract Votes {\n  uint voterCount = 0;\n  uint votingStartTime;\n\n\n  // TODO: add a modifier so only valid voters can vote\n  function voteForCandidates() public {\n\n  }\n}",
+  "sourcePath": "/Users/njeringigi/CMU/sem-2/bitcoin_and_cryptocurrencies/project/DigiVote/node-backend-2/contracts/Votes.sol",
+  "ast": {
+    "absolutePath": "/Users/njeringigi/CMU/sem-2/bitcoin_and_cryptocurrencies/project/DigiVote/node-backend-2/contracts/Votes.sol",
+    "exportedSymbols": {
+      "Votes": [
+        192
+      ]
+    },
+    "id": 193,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 182,
+        "literals": [
+          "solidity",
+          ">",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 192,
+        "linearizedBaseContracts": [
+          192
+        ],
+        "name": "Votes",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 185,
+            "name": "voterCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 192,
+            "src": "44:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 183,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "44:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 184,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "62:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 187,
+            "name": "votingStartTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 192,
+            "src": "67:20:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 186,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "67:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 190,
+              "nodeType": "Block",
+              "src": "185:6:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 191,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "voteForCandidates",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 188,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "175:2:1"
+            },
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "185:0:1"
+            },
+            "scope": 192,
+            "src": "149:42:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 193,
+        "src": "25:168:1"
+      }
+    ],
+    "src": "0:193:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/njeringigi/CMU/sem-2/bitcoin_and_cryptocurrencies/project/DigiVote/node-backend-2/contracts/Votes.sol",
+      "exportedSymbols": {
+        "Votes": [
+          192
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 182,
+        "name": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            192
+          ],
+          "name": "Votes",
+          "scope": 193
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "voterCount",
+              "scope": 192,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 183,
+                "name": "ElementaryTypeName",
+                "src": "44:4:1"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 184,
+                "name": "Literal",
+                "src": "62:1:1"
+              }
+            ],
+            "id": 185,
+            "name": "VariableDeclaration",
+            "src": "44:19:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "votingStartTime",
+              "scope": 192,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 186,
+                "name": "ElementaryTypeName",
+                "src": "67:4:1"
+              }
+            ],
+            "id": 187,
+            "name": "VariableDeclaration",
+            "src": "67:20:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "voteForCandidates",
+              "scope": 192,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 188,
+                "name": "ParameterList",
+                "src": "175:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 189,
+                "name": "ParameterList",
+                "src": "185:0:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 190,
+                "name": "Block",
+                "src": "185:6:1"
+              }
+            ],
+            "id": 191,
+            "name": "FunctionDefinition",
+            "src": "149:42:1"
+          }
+        ],
+        "id": 192,
+        "name": "ContractDefinition",
+        "src": "25:168:1"
+      }
+    ],
+    "id": 193,
+    "name": "SourceUnit",
+    "src": "0:193:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-15T11:19:48.845Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
