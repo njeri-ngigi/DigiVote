@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Raleway&display=swap');
+
+html {
+    height: 100%;
+}
+
+body, #root, .App, .auth {
+  height: 100%;
+}
+
+.auth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #fed049;
+  color: #007580;
+
+  .welcome {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Fascinate";
+
+    h1 {
+      font-size: 4em;
+    }
+
+    .vote-icon {
+      animation: show 1.5s;
+      font-size: 2em  !important;
+    }
+  }
+
+  .login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+
+    input, button {
+      border-radius: 20px;
+      padding: 10px 20px;
+      width: 350px;
+      margin-bottom: 20px;
+      text-align: center;
+      outline: none;
+      font-family: "Raleway";
+    }
+
+    input {
+      border: 1px solid #282846;
+      color: #282846;
+    }
+
+    button {
+      border: none;
+      margin-top: 20px;
+      background-color: #282846;
+      color: white;
+    }
+
+    p {
+      color: red;
+    }
+
+    .error {
+      border: 1px solid red;
+    }
+  }
+}
+
+.home {
+  height: 100%;
+  font-family: "Raleway";
+
+  header {
+    position: fixed;
+    top:0;
+    padding: 15px;
+    z-index: 1;
+    background-color: #fed049;
+    width: 100%;
+    color: #282846;
+    font-weight: bolder;
+    box-shadow: 5px 3px 20px #ccc;
+
+    .logout {
+      float: right;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 2px;
+    }
+  }
+
+  .home-body {
+    padding-top: 50px;
+  }
+}
+
+.sidebar {
+  width: 20%;
+  position: fixed;
+  display: flex;
+  height: 100%;
+  padding-top: 30px;
+  box-shadow: 2px 3px 10px #ccc;
+  flex-direction: column;
+
+  p {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    margin-left: 40px;
+    padding: 10px 0;
+    text-align: justify;
+  }
+
+  > div {
+    width: 100%;
+
+    .position {
+      padding: 10px 40px;
+    }
+
+    .position:hover{
+      cursor: pointer;
+      background-color: #282846;
+      color: #d8ebe4;
+      background-color: none;
+
+    }
+    .active {
+      color: #fed049 !important;
+      font-weight: bolder;
+    }
+  }
+}
+
+.candidates {
+  margin-left: 20%;
+  margin-top: 50px;
+  padding-left: 30px;
+
+  .vote {
+    padding: 10px 20px;
+    border: none;
+    color: #282846;
+    background-color: #fed049;
+    border-radius: 30px;
+  }
+  .vote:hover {
+    background-color: #282846;
+    color: #fed049;
+  }
+
+  .candidate-cat {
+    margin-top: 2em;
+    padding-left: 10px;
+
+    h2 {
+      border-bottom: 1px solid #282846;
+      width: fit-content;
+    }
+  }
+
+  .candidates-list {
+    display: flex;
+    margin-top: 30px;
+
+    .candidate {
+      height: 200px;
+      width: 200px;
+      box-shadow: 5px 3px 20px #ccc;
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        background-color: #d8ebe4;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .candidate:hover {
+      cursor: pointer;
+      box-shadow: 10px 20px 10px #ccc;
+      margin-top: 25px;
+      transition: .5s ease-in-out;
+    }
+    
+    .checked {
+      position: absolute;
+      font-size: 2em;
+      color: #fed049;
+      justify-self: flex-end;
+      margin-top: -15px;
+      display: none;
+
+    }
+    .show {
+      display: block;
+    }
+  }
+
+  .candidate-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .choose {
+      border: none;
+      color: #282846;
+      background-color: #fed049;
+      outline: none;
+      padding: 5px 20px;
+      border-radius: 30px;
+      margin-top: 40px;
+      max-width: 150px;
+    }
+
+    .choose:hover {
+      color: #fed049;
+      background-color: #282846;
+    }
+  }
+}
+
+.voting-error {
+  box-shadow: 5px 3px 20px #ccc;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 30px;
+  animation: shake .5s ;
+  animation-iteration-count: 2;
+  animation-delay: .2s;
+
+  button {
+    border: none;
+    color: #282846;
+    background-color: #fed049;
+    outline: none;
+    padding: 2px 20px;
+    border-radius: 30px;
+    margin-left: 10px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes show {
+  from { 
+    margin-top: -20px;
+    opacity: 0;
+  }
+  to   { 
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
